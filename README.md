@@ -76,12 +76,9 @@ The data is sourced from Kaggle: https://www.kaggle.com/datasets/ukveteran/adven
 ## 5. Files
 This repository includes the following key implementation files:
 
-- ADF ingestion JSON configuration
-Defines dynamic ingestion logic for loading multiple datasets into the Bronze layer.
+- ingestion.json: ADF ingestion JSON configuration, defines dynamic ingestion logic for loading multiple datasets into the Bronze layer.
 
-- Databricks transformation notebook 
-Implements data cleaning, normalization, and transformation logic.
+- silver_layer.ipynb: Databricks transformation notebook, implements data cleaning, normalization, and transformation.
 
-- Synapse SQL scripts
-Creates external tables and views for analytics and BI reporting.
+- create_views.sql: Synapse SQL scripts, creates external tables and views for analytics and BI reporting.
 
