@@ -4,7 +4,7 @@ This project implements a batch data engineering pipeline on Azure that ingests 
 
 The goal of this project is to demonstrate real-world data engineering practices, including data orchestration, data lake layering (Bronze / Silver / Gold), and separation of storage and compute.
 
-## 1.Dataset
+## 1. Dataset
 The project uses the AdventureWorks dataset, a synthetic business dataset representing a fictional manufacturing and retail company.
 The dataset includes:
 - Sales transactions
@@ -18,7 +18,7 @@ The data is sourced from Kaggle: https://www.kaggle.com/datasets/ukveteran/adven
   
 
 
-## 2.Technology Stack
+## 2. Technology Stack
 - Azure Data Factory – Orchestration and batch data ingestion
 - Azure Data Lake Storage Gen2 – Storage for raw and processed data
 - Azure Databricks – Data transformation and processing
@@ -26,7 +26,7 @@ The data is sourced from Kaggle: https://www.kaggle.com/datasets/ukveteran/adven
 - Power BI – Data visualization and reporting
 
 
-## 3.Architecture Layers
+## 3. Architecture Layers
 - Bronze (Raw) - Raw data is ingested in its original format
   
 - Silver (Transformed) - Data is cleaned, standardized, and structured for analytical use.
@@ -34,7 +34,7 @@ The data is sourced from Kaggle: https://www.kaggle.com/datasets/ukveteran/adven
 - Gold (Serving) - Curated datasets optimized for reporting and BI consumption.
 
 
-## 4.Workflow Overview
+## 4. Workflow Overview
 ### 4.1 Data Ingestion
 - Azure Data Factory is used to orchestrate the ingestion process.
 
@@ -46,9 +46,9 @@ The data is sourced from Kaggle: https://www.kaggle.com/datasets/ukveteran/adven
 
 
 ### 4.2 Data Transformation
-- Azure Databricks is used to clean and transform the raw data.
+- Data transformations are implemented using PySpark on Azure Databricks.
 
-- Key transformation steps include: normalization, handling missing and invalid records, standardizing schemas across datasets.
+- Key transformation steps include data type normalization, handling missing and invalid records, and standardizing schemas across datasets.
 
 - Cleaned and structured data is written to the Silver layer in an analytics-friendly format.
 
